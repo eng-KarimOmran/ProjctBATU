@@ -1,0 +1,30 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.list-style-none{
+    list-style: none;
+}
+.text-decoration-none{
+    text-decoration: none;
+}
+/*           navbar       */
+nav ul a{
+    font-size: 1rem;
+}
+.logo{
+    font-size: 1.875rem;
+}
+.icon-img{
+    width: 50px;
+}
+/*          media        */
+@media(max-width:992px){
+    .list-nav{
+        height: 0px !important;
+        transition: height .5s;
+    }
+    .btn-nav:checked + .list-nav{
+        height: 235px !important;
+        transition: height .5s;
+    }
+}
