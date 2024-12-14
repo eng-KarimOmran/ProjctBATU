@@ -17,14 +17,37 @@ nav ul a{
 .icon-img{
     width: 50px;
 }
+.inp-find{
+    padding-right: 135px;
+}
+/*           Home             */
+.inp-find{
+    background-color: transparent !important;
+}
+.btn-custom{
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #fff;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-border-color: #fff;
+}
 /*          media        */
 @media(max-width:992px){
     .list-nav{
-        height: 0px !important;
-        transition: height .5s;
+        position: fixed;
+        inset: 0;
+        width: 0px !important;
+        transition: width .4s;
+        background-color: black !important;
     }
-    .btn-nav:checked + .list-nav{
-        height: 235px !important;
-        transition: height .5s;
+    .list-nav-open{
+        width: 100% !important;
+        transition: width .4s;
+    }
+    .head-navlist{
+        border-bottom: 2px solid rgb(255, 255, 255);
     }
 }
