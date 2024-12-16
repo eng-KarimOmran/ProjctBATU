@@ -18,27 +18,10 @@ nav ul a{
 .icon-img{
     width: 50px;
 }
+/*           Home             */
 .inp-find{
     padding-right: 135px;
 }
-nav ul a::before{
-    content: '';
-    position: absolute;
-    bottom: -10%;
-    height: 2px;
-    width: 0;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    transition: width .2s;
-}
-nav ul a:hover::before{
-    transition: width .2s;
-    width: 100%;
-}
-.navList-active::before{
-    width: 100%;
-}
-/*           Home             */
 .inp-find{
     background-color: transparent !important;
 }
@@ -80,7 +63,7 @@ nav ul a:hover::before{
         inset: 0;
         width: 0px !important;
         transition: width .4s;
-        background-color: #1E202B !important;
+        background-color: #1e202b !important;
     }
     .list-nav-open{
         width: 100% !important;
@@ -88,5 +71,29 @@ nav ul a:hover::before{
     }
     .head-navlist{
         border-bottom: 2px solid rgba(0, 0, 0, 0.434);
+    }
+    .list-nav li{
+        margin-top: 30px;
+        background-color: #323544 !important;
+        margin: 5px 0;
+    }
+}
+@media(min-width:992px){
+    nav ul a::before{
+        content: '';
+        position: absolute;
+        bottom: -10%;
+        height: 2px;
+        width: 0;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        transition: width .2s;
+    }
+    nav ul a:hover::before{
+        transition: width .2s;
+        width: 100%;
+    }
+    .navList-active::before{
+        width: 100%;
     }
 }
