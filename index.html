@@ -19,7 +19,7 @@
             <i id="IconLest" class="fa-solid fa-list d-lg-none text-white"></i>
             <input type="checkbox" class="btn-nav d-none" id="btn-nav">
             <ul id="listNav" class="d-flex ps-0 list-style-none mb-0 col-12 col-lg-auto flex-column flex-lg-row list-nav overflow-hidden">
-                <div class="d-flex justify-content-between align-items-center py-4 head-navlist d-lg-none container">
+                <div class="d-flex justify-content-between align-items-center py-4 head-navlist d-lg-none">
                     <div class="text-white">
                         <div class="d-flex align-items-center">
                             <img src="imgs/logoCloudWatch.png" class="icon-img d-inline-block" alt="logoCloudWatch">
@@ -28,23 +28,41 @@
                     </div>
                     <i id="XNav" class="fa-solid fa-arrow-left d-lg-none text-white"></i>
                 </div>
-                <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#Home">Home</a></li>
+                <li class="me-3 text-center"><a class="text-white text-decoration-none navList-active" href="#Home">Home</a></li>
                 <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#Services">Services</a></li>
                 <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#Hour">Hour</a></li>
                 <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#Today">Today</a></li>
-                <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#3 Day">3 Day</a></li>
+                <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#ThreeDay">3 Day</a></li>
                 <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#Week">Week</a></li>
                 <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#About">About</a></li>
                 <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#Contact">Contact</a></li>
-                <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#Home">Log in</a></li>
+                <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#Login">Log in</a></li>
                 <li class="me-3 text-center"><a class="text-white text-decoration-none" href="#register">Register</a></li>
             </ul>
         </div>
     </nav>
-    <section id="Home" class="Home vh-100 bg-dark d-flex align-items-center justify-content-center">
+    <section id="Home" class="Home position-relative vh-100 d-flex align-items-center justify-content-center">
         <div class="container position-relative px-0">        
             <input type="text" class="form-control rounded-pill bg-black text-white py-3 ps-4 inp-find">
             <button class="btn btn-outline-info btn-custom rounded-pill px-5 py-3 position-absolute btn-find end-0 top-0">Find</button>
+        </div>
+    </section>
+    <section id="Services" class="Services py-5">
+        <h2 class="text-center text-white">Services</h2>
+        <p class="text-center text-white">Monitor weather conditions throughout the</p>
+        <div class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+            <div class="services-card d-flex justify-content-center align-items-center my-3">
+                <span class="text-white">Hour</span>
+            </div>
+            <div class="services-card d-flex justify-content-center align-items-center my-3">
+                <span class="text-white">Day</span>
+            </div>
+            <div class="services-card d-flex justify-content-center align-items-center my-3">
+                <span class="text-white">3 Day</span>
+            </div>
+            <div class="services-card d-flex justify-content-center align-items-center my-3">
+                <span class="text-white">Week</span>
+            </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
